@@ -78,12 +78,12 @@ if st.button("Predict"):
     prediction = model.predict(vector)[0]
 
     emotion_map = {
-        0: "Sadness 😢",
-        1: "Joy 😊",
-        2: "Love ❤️",
-        3: "Anger 😡",
-        4: "Fear 😨",
-        5: "Surprise 😲"
-    }
+    0: "Sadness 😢",
+    1: "Anger 😡",
+    2: "Love ❤️",
+    3: "Surprise 😲",
+    4: "Fear 😨",
+    5: "Joy 😊"
+}
 
     st.success(f"Predicted Emotion: {emotion_map[prediction]}")
